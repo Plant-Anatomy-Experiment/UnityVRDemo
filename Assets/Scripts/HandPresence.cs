@@ -16,6 +16,8 @@ public class HandPresence : MonoBehaviour
 
     private GameObject spawnedHandModel;
     
+    private Animator HandAnimator;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -45,8 +47,30 @@ public class HandPresence : MonoBehaviour
             }
             
             spawnedHandModel = Instantiate(handModelPrefab, transform);
+            HandAnimator = spawnedHandModel.GetComponent<Animator>();
         }
 
+    }
+
+    void UpdateHandAnimation()
+    {
+        if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
+        {
+            HandAnimator.SetFloat("Trigger",triggerValue);
+        }
+        else
+        {
+            HandAnimator.SetFloat("Trigger",0f);
+        }
+        
+        if (targetDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
+        {
+            HandAnimator.SetFloat("Grip",gripValue);
+        }
+        else
+        {
+            HandAnimator.SetFloat("Grip",0f);
+        }
     }
 
     // Update is called once per frame
@@ -61,6 +85,7 @@ public class HandPresence : MonoBehaviour
         {
             spawnedController.SetActive(false);
             spawnedHandModel.SetActive(true);
+            UpdateHandAnimation();
         }
     }
 }
