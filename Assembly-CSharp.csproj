@@ -52,22 +52,22 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\HandPresence.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\InteractiveObject.cs" />
+     <Compile Include="Assets\Scripts\Speech\SpeechDemo.cs" />
+     <Compile Include="Assets\Scripts\LilyExperiment\LilyInteractiveController.cs" />
+     <Compile Include="Assets\Scripts\LilyExperiment\LilyTelescopeIneractiveController.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\OnionPart.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\LilyExperiment\LilyCultureDishInteractiveController.cs" />
+     <Compile Include="Assets\Scripts\InteractiveObject.cs" />
      <Compile Include="Assets\Scripts\ChaseCameraController.cs" />
      <Compile Include="Assets\Scripts\MagnifierCameraController.cs" />
-     <Compile Include="Assets\Scripts\Tool.cs" />
-     <Compile Include="Assets\Scripts\Speech\SpeechDemo.cs" />
-     <Compile Include="Assets\Scripts\OnionPart.cs" />
-     <Compile Include="Assets\Scripts\TargetGlassSlide.cs" />
-     <Compile Include="Assets\Scripts\LilyExperiment\LilyTelescopeIneractiveController.cs" />
-     <Compile Include="Assets\Scripts\LilyExperiment\LilyInteractiveController.cs" />
-     <Compile Include="Assets\Scripts\LilyExperiment\LilyCultureDishInteractiveController.cs" />
      <Compile Include="Assets\Scripts\Speech\HintManager.cs" />
-     <Compile Include="Assets\Scripts\MicroscopeImageController.cs" />
      <Compile Include="Assets\Scripts\LilyExperiment\LilyGlassSlideInteractiveController.cs" />
+     <Compile Include="Assets\Scripts\HandPresence.cs" />
+     <Compile Include="Assets\Scripts\TargetGlassSlide.cs" />
+     <Compile Include="Assets\Scripts\Tool.cs" />
+     <Compile Include="Assets\Scripts\MicroscopeImageController.cs" />
      <None Include="Assets\FreeLabAssets\Shaders\SBS_Mana.shader" />
  <Reference Include="UnityEngine">
  <HintPath>C:/YTR/Softwares/Unity/2020.3.16f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -672,8 +672,17 @@
  <Reference Include="Unity.XR.Interaction.Toolkit">
  <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ProBuilder.AddOns.Editor">
+ <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder">
+ <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Subsystem.Registration">
  <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.Editor">
+ <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -705,6 +714,9 @@
  <Reference Include="Unity.XR.WindowsMixedReality.Editor">
  <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.XR.WindowsMixedReality.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+ <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.XR.LegacyInputHelpers">
  <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
@@ -723,11 +735,11 @@
  <Reference Include="Unity.XR.ARSubsystems">
  <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
  </Reference>
- <Reference Include="Unity.XR.Oculus.Editor">
- <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.XR.Oculus.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.XR.Interaction.Toolkit.Editor">
  <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.Oculus.Editor">
+ <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.XR.Oculus.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.SpatialTracking">
  <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
@@ -737,18 +749,6 @@
  </Reference>
  <Reference Include="Unity.InteractiveTutorials.Core.Scripts">
  <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.Scripts.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder">
- <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.Editor">
- <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
- <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
