@@ -8,6 +8,9 @@ public class HandPresence : MonoBehaviour
     public bool showController = false;
     
     public List<GameObject> controllerPrefabs;
+
+    public InputDeviceCharacteristics controllerCharacteristics;
+    
     private InputDevice targetDevice;
 
     private GameObject spawnedController;
@@ -22,9 +25,7 @@ public class HandPresence : MonoBehaviour
     void Start()
     {
         List<InputDevice> devices = new List<InputDevice>();
-        InputDeviceCharacteristics rightControllerCharacteristics =
-            InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
-        InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics,devices);
+        InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics,devices);
 
         foreach (var device in devices)
         {
