@@ -53,22 +53,22 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Speech\SpeechDemo.cs" />
-     <Compile Include="Assets\Scripts\LilyExperiment\LilyInteractiveController.cs" />
-     <Compile Include="Assets\Scripts\LilyExperiment\LilyTelescopeIneractiveController.cs" />
-     <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\OnionPart.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\VR\VR Tools\TweezersVRInteraction.cs" />
-     <Compile Include="Assets\Scripts\LilyExperiment\LilyCultureDishInteractiveController.cs" />
      <Compile Include="Assets\Scripts\InteractiveObject.cs" />
      <Compile Include="Assets\Scripts\ChaseCameraController.cs" />
      <Compile Include="Assets\Scripts\MagnifierCameraController.cs" />
+     <Compile Include="Assets\Scripts\MicroscopeImageController.cs" />
+     <Compile Include="Assets\Scripts\LilyExperiment\LilyInteractiveController.cs" />
+     <Compile Include="Assets\Scripts\LilyExperiment\LilyTelescopeIneractiveController.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\LilyExperiment\LilyCultureDishInteractiveController.cs" />
      <Compile Include="Assets\Scripts\Speech\HintManager.cs" />
      <Compile Include="Assets\Scripts\LilyExperiment\LilyGlassSlideInteractiveController.cs" />
      <Compile Include="Assets\Scripts\VR\HandPresence.cs" />
      <Compile Include="Assets\Scripts\TargetGlassSlide.cs" />
      <Compile Include="Assets\Scripts\Tool.cs" />
-     <Compile Include="Assets\Scripts\MicroscopeImageController.cs" />
      <None Include="Assets\FreeLabAssets\Shaders\SBS_Mana.shader" />
  <Reference Include="UnityEngine">
  <HintPath>C:/YTR/Softwares/Unity/2020.3.16f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -694,14 +694,14 @@
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PlasticSCM.Editor">
+ <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InteractiveTutorials.Core">
  <HintPath>C:/YTR/My/Repository/UnityVRDemo/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.dll</HintPath>
