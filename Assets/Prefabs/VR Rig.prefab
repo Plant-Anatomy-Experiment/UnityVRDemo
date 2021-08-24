@@ -954,6 +954,8 @@ MonoBehaviour:
   leftRay: {fileID: 745208916470423506}
   rightRay: {fileID: 745208917044745665}
   rayActivationButton: 11
+  isLeftActive: 0
+  isRightActive: 0
   activationThreshold: 0.1
 --- !u!1 &745208917501306382
 GameObject:
