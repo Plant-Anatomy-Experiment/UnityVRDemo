@@ -260,7 +260,7 @@ MonoBehaviour:
   m_FollowTightness: 10
   m_SnapThresholdDistance: 10
   m_Reticle: {fileID: 0}
-  m_StopLineAtFirstRaycastHit: 1
+  m_StopLineAtFirstRaycastHit: 0
 --- !u!120 &93353559
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -889,7 +889,7 @@ GameObject:
   - component: {fileID: 1180196092}
   - component: {fileID: 1180196091}
   - component: {fileID: 1180196096}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1386,7 +1386,7 @@ MonoBehaviour:
   m_FollowTightness: 10
   m_SnapThresholdDistance: 10
   m_Reticle: {fileID: 0}
-  m_StopLineAtFirstRaycastHit: 1
+  m_StopLineAtFirstRaycastHit: 0
 --- !u!120 &1742470216
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1833,6 +1833,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grab Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712501572623872101, guid: 3e1e755fcf0e3df40bc94df431a46e32,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7712501572623872111, guid: 3e1e755fcf0e3df40bc94df431a46e32,
         type: 3}
