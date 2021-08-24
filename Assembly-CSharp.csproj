@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\TargetGlassSlide.cs" />
      <Compile Include="Assets\Scripts\Tool.cs" />
      <Compile Include="Assets\Scripts\MicroscopeImageController.cs" />
+     <Compile Include="Assets\Scripts\VR\RayController.cs" />
      <None Include="Assets\FreeLabAssets\Shaders\SBS_Mana.shader" />
  <Reference Include="UnityEngine">
  <HintPath>C:/YTR/Softwares/Unity/2020.3.16f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
