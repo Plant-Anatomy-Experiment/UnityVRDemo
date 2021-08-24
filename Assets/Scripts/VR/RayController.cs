@@ -18,7 +18,7 @@ public class RayController : MonoBehaviour
     void Update()
     {
         leftRay.gameObject.SetActive(CheckIfActivated(leftRay));
-        rightRay.gameObject.SetActive(CheckIfActivated(leftRay));
+        rightRay.gameObject.SetActive(CheckIfActivated(rightRay));
     }
 
     public bool CheckIfActivated(XRController controller)
